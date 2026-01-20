@@ -1,0 +1,40 @@
+<div class="login-container">
+  <div class="form-section">
+    <div class="form-wrapper">
+      <h1 class="logo">Logo</h1>
+      <h2 class="welcome-text">Welcome Back</h2>
+      
+      <button class="google-btn">
+        <img src="images/google-icon.svg" alt="Google"> 
+        <span>Login with google</span>
+      </button>
+
+      <div class="divider">
+        <span class="line"></span>
+        <span class="text">OR</span>
+        <span class="line"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Name or Email</label>
+        <input type="text" placeholder="Enter Your Email">
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Create a password">
+      </div>
+
+      <button class="login-submit-btn" (click)="onLogin()">Login</button>
+
+      <p style="margin-top: 20px;">
+        Don't have an account? 
+        <a routerLink="/signup" style="color: black; font-weight: bold; cursor: pointer; text-decoration: none;">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="image-section">
+    <img src="images/house.png" alt="Real Estate House">
+  </div>
+</div>
